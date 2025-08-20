@@ -9,21 +9,72 @@
       }
 
       .search-bar {
+        display: block;
       }
 
       .video-title {
+        margin-top: 0;
+      }
+
+      .video-preview {
         width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      .channel-picture {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+
+      .video-info {
+        display: inline-block;
+        width: 200px;
+      }
+
+      .profile-picture {
+        width: 40px;
+        border-radius: 50px;
+      }
+
+      .thumbnail-row {
+        margin-bottom: 12px;
       }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
-    <img class="thumbnail" src="/thumbnails/thumbnail-1.webp" alt="" />
 
-    <p class="video-title">
-      Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
-    </p>
-    <p class="video-author">Marques Brownlee</p>
-    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+    <!-- Video Preview -->
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="/thumbnails/thumbnail-1.webp" alt="video" />
+      </div>
+      <div>
+        <!-- Channel Picture -->
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/cat.jpg" alt="" />
+        </div>
+
+        <!-- Video Info -->
+        <div class="video-info">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="/thumbnails/thumbnail-1.webp" alt="video" />
+
+      <p class="video-title">Try Not to Laught Challenge #9</p>
+      <p class="video-author">Markiplier</p>
+      <p class="video-stats">19M views &#183; 4 years ago</p>
+    </div>
   </body>
 </html>
